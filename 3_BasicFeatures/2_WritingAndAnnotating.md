@@ -1,6 +1,6 @@
 # Basics of writing R code
 
-*This lesson is derived from Data Carpentry teaching materials:*
+*This lesson is derived from Data Carpentry teaching materials available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode):*
 
 https://datacarpentry.org/R-ecology-lesson/
 

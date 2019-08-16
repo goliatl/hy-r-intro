@@ -1,6 +1,6 @@
 # Manipulating and analyzing data with `tidyverse`
 
-*This lesson is derived from Data Carpentry teaching materials:*
+*This lesson is derived from Data Carpentry teaching materials available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode):*
 
 https://datacarpentry.org/R-ecology-lesson/
 
@@ -486,7 +486,7 @@ We could also have used a specification for what columns to include. This can be
 ```r
 surveys_spread %>%
   gather(key = genus, value = mean_weight, 
-                      Baiomys:Spermophilus) %>%
+                      Baiomys:Spermophilus) %>%
   head()
 ```
 
@@ -526,7 +526,7 @@ surveys_long %>%
   spread(measurement, mean_value)
 ```
 
-#### 9. `write_csv` for data exporting
+#### 9. `write_csv` for data exporting
 
 We previously used the `write.csv` function call to export our data from R. The package `readr` (part of the `tidyverse`) comes with another function for exporting CSV files: `write_csv`.  You might remember that when using `write.csv`, it was necessary to add an extra argument to remove row numbers from the resulting CSV file (`row.names = FALSE`). The `write_csv` function never writes row names, which can simplify things when saving your data for future use.
 

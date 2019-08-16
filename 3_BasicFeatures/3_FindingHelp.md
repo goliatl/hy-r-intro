@@ -1,6 +1,6 @@
 # Finding help
 
-*This lesson is partially derived from Software Carpentry teaching materials:*
+*This lesson is partially derived from Software Carpentry teaching materials under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode):*
 
 http://swcarpentry.github.io/r-novice-gapminder/
 

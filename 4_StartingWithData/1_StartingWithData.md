@@ -1,6 +1,6 @@
 # Starting with data
 
-*This lesson is derived from Data Carpentry teaching materials:*
+*This lesson is derived from Data Carpentry teaching materials available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode):*
 
 https://datacarpentry.org/R-ecology-lesson/
 
@@ -98,7 +98,7 @@ We can see this when inspecting the **str**ucture of a data frame with the funct
 str(surveys)
 ```
 
-#### 4. Inspecting `data.frame` objects
+#### 4. Inspecting `data.frame` objects
 
 We already saw how the functions `head()` and `str()` can be useful to check the content and the structure of a data frame. Here is a non-exhaustive list of functions to get a sense of the content/structure of the data. Let’s try them out!
 
@@ -323,7 +323,7 @@ sex <- factor(sex, levels = c("female", "male", "undetermined"))
 plot(sex)
 ```
 
-#### 9. Using `stringsAsFactors=FALSE`
+#### 9. Using `stringsAsFactors=FALSE`
 
 By default, when building or importing a data frame, the columns that contain characters (i.e. text) are coerced (= converted) into factors. Depending on what you want to do with the data, you may want to keep these columns as `character`. To do so, `read.csv()` and `read.table()` have an argument called `stringsAsFactors` which can be set to `FALSE`.
 
@@ -352,7 +352,7 @@ animal_data <- data.frame(
           feel = c("furry", "squishy", "spiny"),
           weight = c(45, 8 1.1, 0.8)
           )
-          
+
 # missing quotations around the names of the animals
 # missing entry in the feel column (one of the furry animals)
 # missing one comma in the weight column
@@ -371,7 +371,7 @@ country_climate <- data.frame(
        northern_hemisphere = c(TRUE, TRUE, FALSE, "FALSE"),
        has_kangaroo = c(FALSE, FALSE, FALSE, 1)
        )
-       
+
 # country, climate, temperature, and northern_hemisphere are factors; has_kangaroo is numeric
 # using stringsAsFactors = FALSE would have made character vectors instead of factors
 # removing quotes in temperature and northern_hemisphere and replacing 1 by TRUE in the has_kangaroo column

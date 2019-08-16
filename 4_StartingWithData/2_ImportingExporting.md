@@ -1,6 +1,6 @@
 # Importing and exporting data
 
-*This lesson is derived from Software and Data Carpentry teaching materials:*
+*This lesson is derived from Software and Data Carpentry teaching materials available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode):*
 
 http://swcarpentry.github.io/r-novice-inflammation/
 

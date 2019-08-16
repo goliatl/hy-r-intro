@@ -1,6 +1,6 @@
 # Data visualization with `ggplot2`
 
-*This lesson is partially derived from Data Carpentry teaching materials:*
+*This lesson is partially derived from Data Carpentry teaching materials available under the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode):*
 
 https://datacarpentry.org/R-ecology-lesson/
 
@@ -463,7 +463,7 @@ facet_grid(cols = vars(genus))   # new
 facet_grid(. ~ genus)            # old
 ```
 
-#### 9. `ggplot2` themes
+#### 9. `ggplot2` themes
 
 Usually plots with white background look more readable when printed. Every single component of a `ggplot` graph can be customized using the generic `theme()` function, as we will see below. However, there are pre-loaded themes available that change the overall appearance of the graph without much effort.
 
@@ -531,8 +531,6 @@ ggplot(data = yearly_sex_counts, mapping = aes(x = year, y = n, color = sex)) +
 ```
 
 ![](Images/R-ecology-number-species-year-with-theme-1.png?raw=true)
-
-
 
 ```r
 # define custom theme
