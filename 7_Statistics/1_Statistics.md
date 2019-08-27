@@ -252,7 +252,9 @@ ggplot(sleepdata, aes(x = extra)) +
   theme(text = element_text(size = 16))
 ```
 
-![](Images/sleep_normal.png?raw=true)**Answer:** Although it seems possible that the data could be normally distributed, particularly in group 1, it is difficult to tell. This serves to highlight two points:
+![](Images/sleep_normal.png?raw=true)
+
+**Answer:** Although it seems possible that the data could be normally distributed, particularly in group 1, it is difficult to tell. This serves to highlight two points:
 
 - Evaluating test diagnostics can be challenging when dealing with limited data. In fact there are separate statistical tests for evaluating normality. We will not cover those, partially due to time limitations but also because they can be tricky to interpret, e.g. due to the outcome depending on the sample size. A golden rule is that, whatever you do, always plot the data (don't rely on statistics alone!).
 
