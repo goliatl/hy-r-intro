@@ -28,6 +28,10 @@ If not still in the workspace, load the data we saved in the previous lesson.
 
 ```r
 surveys_complete <- read_csv("data_output/surveys_complete.csv")
+
+# If you're looking at this episode on its own, you can download the data from:
+download.file(url = "https://raw.githubusercontent.com/jessepharrison/hy-r-intro/master/DataFiles/surveys_complete.csv",
+ destfile = "data_output/surveys_complete.csv")
 ```
 
 #### 2. Plotting with `ggplot2`
