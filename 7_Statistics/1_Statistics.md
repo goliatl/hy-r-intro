@@ -423,7 +423,7 @@ The package `ggfortify` comes with the function `autoplot`, which can be used to
 autoplot(cars_lm)
 ```
 
-![](Images/cars_diagnostics.png?raw=true)
+![](Images/cars_diagnostics.png)
 
 1. The *residuals vs fitted* plot is used to check the homogeneity of variance. The residuals should be somewhat equally spread around the dashed horizontal line (the line of best fit). We see a few _outliers_ identified by row numbers. 
    
