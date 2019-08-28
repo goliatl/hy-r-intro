@@ -1,9 +1,3 @@
----
-layout: page
-title: "Licenses"
-root: .
----
-
 ## Introduction to Data Analysis with R
 
 Two-day workshop (09:00 - 17:00)
