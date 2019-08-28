@@ -6,16 +6,16 @@ http://swcarpentry.github.io/r-novice-gapminder/
 
 #### 1. Introduction to RStudio
 
-R is a programming language for handling, analysing and visualising data. It is freely downloadable and works on all major platforms, including Windows, macOS and Linux. At its core, R code is made of text-based commands that can be run from a command prompt and without a graphical user interface. However, R can also be run via an open-source interface such as RStudio (see [rstudio.com](http://www.rstudio.com)). RStudio provides a built in-editor and provides many advantages, including ease of use, integration with version control and project management. 
+R is a programming language for handling, analysing and visualizing data. It is freely downloadable and works on all major platforms, including Windows, macOS and Linux. At its core, R code is made of text-based commands that can be run from a command prompt and without a graphical user interface. R can also be run via an open-source interface such as RStudio (see [rstudio.com](http://www.rstudio.com)). RStudio provides a built in-editor and offers many advantages including ease of use, integration with version control and project management. 
 
-We will be using RStudio Server, which lets us access a remote instance of R via a web browser.
+During this workshop we will be using RStudio Server, which lets us access a remote instance of R via a web browser.
 
 #### 2. Accessing RStudio Server on notebooks.csc.fi
 
 To launch your own instance of R:
 
-- Go to [notebooks.csc.fi](https://notebooks.csc.fi) and log in using the Haka authentication service. If you do not have a Haka account and password, please contact an instructor.
-- Find "RStudio Server" in the dashboard and click on "Launch new".  
+- Go to [notebooks.csc.fi](https://notebooks.csc.fi) and log in using the Haka authentication service. If you do not have a Haka account and password, please let us know!
+- Find "RStudio for Data Carpentry" in the dashboard and click on "Launch new".  
 - Wait for the virtual machine to start and click on "Open in browser" once the link appears.
 - Your browser will open a new window with login and password details. Press "Click to copy password & proceed".
 - This will open a new tab where you can enter a username ("rstudio") and paste your password to open up a new RStudio session.
@@ -47,7 +47,7 @@ There are two main ways one can work within RStudio:
    - Quickly becomes laborious
 2. Write using the script editor
    - Makes it possible to save your code for later (as an .R file)
-   - Far easier to keep track of longer segments of code
+   - Far easier to keep track of long segments of code
 
 RStudio offers you great flexibility in running code from within the editor window. There are buttons, menu choices, and keyboard shortcuts. To run the current line, you can:
 
@@ -63,7 +63,7 @@ Many data analysis projects might be organised like this:
 
 ![](Images/bad_layout.png?raw=true)
 
-There are many reasons why we should *ALWAYS* avoid this:
+There are many reasons why we should *always* avoid this:
 
 1. It is hard to tell which version of your data is the original
 2. It gets really messy because it mixes files with various extensions together
@@ -92,25 +92,25 @@ Switching between projects can be done from the "File" menu ("Open Project").
 
 ##### Best practices for project organisation
 
-Although there is no “best” way to lay out a project, there are some general principles to adhere to that will make project management easier:
+Although there is no single best way to lay out a project, there are general principles to adhere to that will make project management easier:
 
 - **Treat data as read-only**
   
-  - This is probably the most important goal of setting up a project. Data are typically time consuming and / or expensive to collect. Working with them interactively where they can be modified means you are never sure of where the data came from, or how they have been modified since collection.
+  - This is probably the most important goal of setting up a project. Data are typically time-consuming and / or expensive to collect. Working with them interactively where they can be modified means you are never sure of where the data came from, or how they have been modified.
 
 - **Separate raw and tidied data**
   
-  - In many cases your data will be “messy”: it will need significant preprocessing to get into a format R (or any other programming language) will find useful. Storing these scripts in a separate folder, and creating a second “read-only” data folder to hold the “cleaned” data sets can prevent confusion between the two sets.
+  - In many cases your data will be “messy”: it will need significant preprocessing to get into a format R (or any other programming language) will find useful. Storing these files in a separate folder, and creating a second “read-only” data folder to hold the “cleaned” data sets can prevent confusion between the two sets.
 
 - **Treat the generated output as disposable**
   
-  - Anything generated by your scripts should be treated as disposable: it should all be able to be regenerated from your scripts.
+  - Anything generated by your scripts should be treated as disposable: it should all be possible to regenerate from your scripts.
 
-Here are also some general recommendations for organising a project:
+Some general recommendations for organising a project:
 
 1. Put each project in its own directory, which is named after the project.
-2. Put text documents associated with the project in the `doc` directory.
-3. Put raw data and metadata in the `data` directory, and files generated during cleanup and analysis in a `results` directory.
+2. Put text documents associated with the project in a directory called `doc` .
+3. Put raw data and metadata in the `data` directory, and files generated during cleanup and analysis in the `results` directory.
 4. Put source for the project’s scripts and programs in the `src` directory, and programs brought in from elsewhere or compiled locally in the `bin` directory.
 5. Name all files to reflect their content or function.
 

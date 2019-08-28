@@ -169,7 +169,7 @@ With real data, things practically never look as neat as they did in the example
 
 For a typical parametric analysis, we would move through the following steps:
 
-1. **Descriptive statistics:** summarize and visualize your data
+1. **Descriptive statistics:** summarize and visualize the data
 
 2. **Test diagnostics:** check for deviations from test assumptions
    
@@ -179,7 +179,7 @@ For a typical parametric analysis, we would move through the following steps:
 
 3. **Inferential statistics:** run the test and interpret the output
 
-*Remember that in some cases a non-parametric test might be your best option to start with*. The steps taken for these are very similar: first describe the data, check that the assumptions are met, then go ahead with significance testing.
+*Remember that in some cases a non-parametric test might be your best option to start with*. The steps taken for these are very similar: describe the data, check that the assumptions are met, then go ahead with significance testing.
 
 #### 5. Examples of statistical methods
 
@@ -273,7 +273,7 @@ ggplot(sleepdata, aes(x = extra)) +
 
 **Independent-samples _t_-test**
 
-For our purposes, we can assume that we have met the assumptions (we'll look at variance later on). We can now perform an independent-samples _t_-test, also known as a two-sample test. Notice the `~` symbol, which is indicative of _formulas_ in R. We are using it to say that we'd like to examine `extra` "by" the `group` variable:
+For our purposes, we can conclude that we have met the assumptions (we'll look at variance later on). We can now perform an independent-samples _t_-test, also known as a two-sample test. Notice the `~` symbol, which is indicative of _formulas_ in R. We are using it to say that we'd like to examine `extra` "by" the `group` variable:
 
 ```r
 t.test(extra ~ group, sleep)
@@ -436,7 +436,7 @@ autoplot(cars_lm)
    
    - While we can see things aren't perfect, not to worry. There is no obvious co-dependence between the residuals and fitted values. While the scatter is harder to interpret, it lacks an obvious pattern.
 
-4. The _residuals vs leverage_ can help us find out if certain observations have a pronounced effect on the model. Such values would stand out from the other points. In our case, it looks like a few values might be more influential than the others (two were also identified as outliers in the other plots).
+4. The _residuals vs leverage_ plot can help us find out if certain observations have a pronounced effect on the model. Such values would stand out from the other points. In our case, it looks like a few values might be more influential than the others (two were also identified as outliers in the other plots).
 
 If everything looks acceptable, we can print out the model output using the `summary` function:
 
@@ -558,7 +558,7 @@ Now that the data are in the desired format, this is a good time to think about 
 
 - Expected values should be 5 or above in at least 80% of the cells, and no cell should have an expected value of less than one.
 
-Looking at the numbers we have in our table, especially the last assumption might give us something to think about. To have a look at the expected values, let's run the test using the `chisq.test` function call:
+Looking at the numbers we have in our table, especially the last assumption might give us something to think about. To have a look at the expected values, let's run the test using `chisq.test`:
 
 ```r
 mtcarsdata_chisq <- chisq.test(mtcarsdata_freqs)

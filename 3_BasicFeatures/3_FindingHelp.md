@@ -69,9 +69,9 @@ You may also consider submitting a question of your own, in which case it can be
 sessionInfo()
 ```
 
-#### Hands-on challenges
+#### Challenges
 
-**Hands-on 1:** Look at the help for the `c()` function. What kind of vector do you expect you will create if you evaluate the following:
+**Challenge 1:** Look at the help for the `c()` function. What kind of vector do you expect you will create if you evaluate the following:
 
 ```r
 c(1, 2, 3)
@@ -79,17 +79,16 @@ c('d', 'e', 'f')
 c(1, 2, 'f')
 ```
 
-Solution: 
+**Answer**: 
 
 The `c()` function creates a vector, in which all elements are the same type. In the first case, the elements are numeric, in the second, they are characters, and in the third they are characters: the numeric values are “coerced” to be characters.
 
-**Hands-on 2:** Try to figure out how to use a completely new function based only on its documentation. Use `sample()` to produce
+**Challenge 2:** Try to figure out how to use a completely new function based only on its documentation. Use `sample()` to produce
 
 - a Finnish lottery ticket: 7 randomly drawn numbers out of 40
 - a vector of 0s and 1s, representing 10 coin tosses
-  - you can also try using a factor with the levels 'heads' and 'tails', if you feel like it!
 
-Solution: 
+**Answer**: 
 
 ```r
 sample(1:40, 7)
@@ -98,7 +97,4 @@ sample(1:40, 7)
 sample(c(0, 1), 10, replace = TRUE) # sampling with replacement
 # sample(0:1, 10, replace = TRUE)
 # sample(2, 10, replace = TRUE)
-
-cointoss <- factor(c("heads", "tails"))
-sample(cointoss, 10, replace = TRUE)
 ```

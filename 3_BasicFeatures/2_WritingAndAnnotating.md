@@ -106,7 +106,7 @@ Take a moment to try out different expressions until you get the hang of it. For
 
 #### 5. Functions and their arguments
 
-Functions are “canned scripts” that automate more complicated sets of commands including operations assignments, etc. Many functions are predefined, or can be made available by importing R *packages* (more on that later). 
+Functions are “canned scripts” that automate more complicated sets of commands including operations and assignments etc. Many functions are predefined, or can be made available by importing R *packages* (more on that later). 
 
 A function usually takes one or more inputs called *arguments*. Functions often (but not always) return a *value*. A typical example would be the function `sqrt()`. The input (the argument) must be a number, and the return value is the square root of that number. Executing a function (‘running it’) is called *calling* the function. An example of a function call is:
 
@@ -397,10 +397,9 @@ heights <- c(63, 69, 60, 65, NA, 68, 61, 70, 61, 59, 64, 69, 63, 63, NA, 72, 65,
 ```
 
 2. Use the function `median()` to calculate the median of the `heights` vector.
+3. Use R to figure out how many people in the set are taller than 67 inches.
 
-3- Use R to figure out how many people in the set are taller than 67 inches.
-
-**Answer:**
+**Answers:**
 
 ```r
 # 1.

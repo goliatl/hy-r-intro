@@ -67,6 +67,9 @@ download.file(url="https://ndownloader.figshare.com/files/2292169",
               destfile = "data/portal_data_joined.csv")
 
 surveys <- read.csv("data/portal_data_joined.csv")
+
+# Alternative link to the portal data:
+# https://raw.githubusercontent.com/jessepharrison/hy-r-intro/master/DataFiles/portal_data_joined.csv
 ```
 
 This statement doesn’t produce any output because, as you might recall, assignments don’t display anything. If we want to check that our data has been loaded, we can see the contents of the data frame by typing its name: `surveys`.
@@ -176,7 +179,7 @@ surveys$species_id          # Result is a vector
 
 In RStudio, you can use the autocompletion feature to get the full and correct names of the columns.
 
-**Challenge**
+**Challenges**
 
 1. Create a `data.frame` (`surveys_200`) containing only the data in row 200 of the `surveys` dataset.
 
@@ -190,6 +193,8 @@ In RStudio, you can use the autocompletion feature to get the full and correct n
 3. Use `nrow()` to extract the row that is in the middle of the data frame. Store the content of this row in an object named `surveys_middle`.
 
 4. Combine `nrow()` with the `-` notation above to reproduce the behavior of `head(surveys)`, keeping just the first through 6th rows of the surveys dataset.
+
+**Answers:**
 
 ```r
 # 1.
@@ -312,13 +317,16 @@ head(sex)
 #> Levels: undetermined F M
 ```
 
-**Challenge**
+**Challenge:**
 
 - Rename “F” and “M” to “female” and “male” respectively.
 - Now that we have renamed the factor level to “undetermined”, can you recreate the barplot such that “undetermined” is last (after “male”)?
 
+**Answer:**
+
 ```r
 levels(sex)[2:3] <- c("female", "male")
+
 sex <- factor(sex, levels = c("female", "male", "undetermined"))
 plot(sex)
 ```
@@ -342,7 +350,7 @@ str(surveys)
 surveys$plot_type <- factor(surveys$plot_type)
 ```
 
-**Challenge**
+**Challenges**
 
 1. We have seen how data frames are created when using `read.csv()`, but they can also be created by hand with the `data.frame()` function. There are a few mistakes in this hand-crafted `data.frame`. Can you spot and fix them? Don’t hesitate to experiment!
 

@@ -223,3 +223,11 @@ Now we see:
 ![](Images/cars_cleaned_2.png?raw=true)
 
 You now know some of the principles for importing data into R and exporting them for further use. In fact, we've covered much more than the mere basics. Good work! In the next session, we will return to the survey data and learn about different data wrangling tools that come as part of the `tidyverse` (more on that soon).
+
+#### 5. Sourcing and saving R scripts
+
+One more thing, though: how to load and save an R script?
+
+In RStudio, we can click on `File` --> `Open File...` to load an existing script. We can also save the current one using `File` --> `Save As...`. Alternatively, the toolbar under the File menu contains icons for importing and exporting scripts.
+
+ 
