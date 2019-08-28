@@ -6,7 +6,7 @@
 
 - Build a mental model of the order these steps proceed in.
 
-- Recognize some of the questions and challenges related to different steps .
+- Recognize some of the questions and challenges related to different steps.
 
 #### 1. A typical workflow
 
