@@ -1,17 +1,8 @@
----
-layout: page
-title: "Licenses"
-root: .
----
+All materials in this course are made available under the CC BY 4.0 license.
 
-The materials employed in this course are based on CSC teaching materials available via a MIT 
-license, as well as Software and Data Carpentry Instructional Materials (available under the CC
-BY 4.0 license). Where modifications to Software or Data Carpentry Instructional Materials have
-been made, these are indicated in the relevant Markdown files. Where the course materials are
-derived from work that is Copyright @ Software Carpentry or Copyright @ Data Carpentry, full
-attribution is given in the relevant Markdown files.
+The materials used in this course are based on CSC teaching materials available via a MIT license, as well as Software and Data Carpentry Instructional Materials (available under the CC BY 4.0 license). Where modifications to Software or Data Carpentry Instructional Materials have been made, these are indicated in the relevant Markdown files. Where the course materials are derived from work that is Copyright @ Software Carpentry or Copyright @ Data Carpentry, full attribution is given in the relevant Markdown files.
 
-CSC materials: https://github.com/csc-training/R-for-beginners
+CSC teaching materials used for building this course: https://github.com/csc-training/R-for-beginners
 
 MIT License for CSC materials: https://github.com/csc-training/R-for-beginners/blob/master/LICENSE
 
@@ -19,9 +10,7 @@ Software Carpentry: http://software-carpentry.org/
 
 Data Carpentry: https://datacarpentry.org/
 
-The following is a human-readable summary of
-(and not a substitute for) the [full legal text of the CC BY 4.0
-license][cc-by-legal].
+The following is a human-readable summary of (and not a substitute for) the [full legal text of the CC BY 4.0 license][cc-by-legal].
 
 You are free:
 
@@ -36,11 +25,17 @@ license terms.
 Under the following terms:
 
 * **Attribution**---You must give appropriate credit (mentioning that
+  
   your work is derived from work that is Copyright © Software
+  
   Carpentry and, where practical, linking to
+  
   http://software-carpentry.org/), provide a [link to the
+  
   license][cc-by-human], and indicate if changes were made. You may do
+  
   so in any reasonable manner, but not in any way that suggests the
+  
   licensor endorses you or your use.
 
 **No additional restrictions**---You may not apply legal terms or
@@ -50,11 +45,16 @@ anything the license permits.  With the understanding that:
 Notices:
 
 * You do not have to comply with the license for elements of the
+  
   material in the public domain or where your use is permitted by an
+  
   applicable exception or limitation.
 * No warranties are given. The license may not give you all of the
+  
   permissions necessary for your intended use. For example, other
+  
   rights such as publicity, privacy, or moral rights may limit how you
+  
   use the material.
 
 ## Software

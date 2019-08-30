@@ -385,7 +385,7 @@ There are two types of `facet` functions:
 - `facet_wrap()` arranges a one-dimensional sequence of panels to allow them to cleanly fit on one page.
 - `facet_grid()` allows you to form a matrix of rows and columns of panels.
 
-Both geometries allow to to specify faceting variables specified within `vars()`. For example, `facet_wrap(facets = vars(facet_variable))` or `facet_grid(rows = vars(row_variable), cols = vars(col_variable))`.
+Both geometries allow to specify faceting variables specified within `vars()`. For example, `facet_wrap(facets = vars(facet_variable))` or `facet_grid(rows = vars(row_variable), cols = vars(col_variable))`.
 
 Let’s start by using `facet_wrap()` to make a time series plot for each species:
 
