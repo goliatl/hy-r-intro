@@ -257,19 +257,8 @@ ggplot(sleepdata, aes(x = extra)) +
 
 ![](Images/sleep_normal.png)
 
-**Answer:** Although it seems possible that the data could be normally distributed, particularly in group 1, it is difficult to tell. This serves to highlight two points:
-
-- Evaluating test diagnostics can be challenging when dealing with limited data. In fact there are separate statistical tests for evaluating normality. We will not cover those, partially because they can be tricky to interpret (e.g. due to the outcome depending on the sample size). A golden rule is that, whatever you do, always plot the data (don't rely on statistics alone!).
-
-- In practice, some violations of normality are likely to be acceptable because parametric tests are fairly robust to these. This is particularly so when dealing with a _balanced design_, that is, a situation where each group has an equal number of observations.
 2. Do you think the box plot we created is useful for evaluating parametric test diagnostics? Is there anything you would display differently? 
 
-**Answer:** While parametric tests employ the mean as a measure of central tendency, box plots display the median by default. While we didn't cover this earlier, there is a way in `ggplot2` to change the behavior of `geom_boxplot` to display the mean instead. This can be done using `middle`:
-
-```r
-# ggplot(data = df, aes(x = x_variable, y = y_variable)) + 
-#        geom_boxplot(aes(middle = mean(y_variable))
-```
 
 **Independent-samples _t_-test**
 
