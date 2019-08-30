@@ -77,7 +77,7 @@ What do you think is the current content of the object `weight_lb`?
 
 Sometimes we need to remove an object from the workspace. This can be done using `rm()` (for example, `rm(weight_kg)` would remove `weight_kg`).
 
-There is also a command for completely clearing your workspace: `rm(list = ls())`. This deletes **everything** in your current workspace. Use this command with caution - there is no 'Undo' button in R. If you accidentally remove something, you will need to run your code again!
+There is also a command for completely clearing your workspace: `rm(list = ls())`. This deletes all objects currently in R's memory. Use this command with caution - there is no 'Undo' button in R. If you accidentally remove something, you will need to run your code again!
 
 #### 3. Code annotation
 
@@ -101,7 +101,7 @@ Take a moment to try out different expressions until you get the hang of it. For
 - It can contain numbers, full stops and underscores, and is case-sensitive.
 - While it is possible to include spaces in object names, this requires extra effort and is not recommended.
   - In general, it is good practice to keep your code as simple and easy to read as possible.
-- Letters with accents and umlauts are best to avoid.
+- Letters with umlauts and accents (e.g. special letters in the Finnish and Spanish alphabet) are best to avoid.
   - They may not work on all systems, which can become problematic when sharing your code with others.
 
 #### 5. Functions and their arguments

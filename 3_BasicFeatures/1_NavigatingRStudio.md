@@ -15,7 +15,7 @@ During this workshop we will be using RStudio Server, which lets us access a rem
 To launch your own instance of R:
 
 - Go to [notebooks.csc.fi](https://notebooks.csc.fi) and log in using the Haka authentication service. If you do not have a Haka account and password, please let us know!
-- Find "RStudio for Data Carpentry" in the dashboard and click on "Launch new".  
+- Find "R Data Analysis" in the dashboard and click on "Launch new".  
 - Wait for the virtual machine to start and click on "Open in browser" once the link appears.
 - Your browser will open a new window with login and password details. Press "Click to copy password & proceed".
 - This will open a new tab where you can enter a username ("rstudio") and paste your password to open up a new RStudio session.
@@ -108,10 +108,9 @@ Although there is no single best way to lay out a project, there are general pri
 
 Some general recommendations for organising a project:
 
-1. Put each project in its own directory, which is named after the project.
+1. Keep all project files under the directory that was automatically created when you named the project.
 2. Put text documents associated with the project in a directory called `doc` .
 3. Put raw data and metadata in the `data` directory, and files generated during cleanup and analysis in the `results` directory.
-4. Put source for the project’s scripts and programs in the `src` directory, and programs brought in from elsewhere or compiled locally in the `bin` directory.
-5. Name all files to reflect their content or function.
+4. Name all files to reflect their content or function.
 
 We will cover topics including data import and export later during this workshop!
