@@ -536,6 +536,8 @@ ggplot(data = yearly_sex_counts, mapping = aes(x = year, y = n, color = sex)) +
 
 ![](Images/R-ecology-number-species-year-with-theme-1.png?raw=true)
 
+If you like the changes you created better than the default theme, you can save them as an object to be able to easily apply them to other plots you may create:
+
 ```r
 # define custom theme
 grey_theme <- theme(axis.text.x = element_text(colour = "grey20",  
