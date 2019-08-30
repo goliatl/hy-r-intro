@@ -268,7 +268,7 @@ ggplot(sleepdata, aes(x = extra)) +
 
 ```r
 # ggplot(data = df, aes(x = x_variable, y = y_variable)) + 
-#        geom_boxplot(aes(middle = mean(y_variable))
+#        geom_boxplot(aes(middle = mean(y_variable)))
 ```
 
 **Independent-samples _t_-test**
