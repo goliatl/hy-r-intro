@@ -129,11 +129,6 @@ Based on the output of `str(surveys)`, can you answer the following questions?
 - How many rows and how many columns are in this object?
 - How many species have been recorded during these surveys?
 
-```r
-## * class: data frame
-## * how many rows: 34786,  how many columns: 13
-## * how many species: 48
-```
 
 #### 5. Indexing and subsetting data frames
 
@@ -194,28 +189,6 @@ In RStudio, you can use the autocompletion feature to get the full and correct n
 
 4. Combine `nrow()` with the `-` notation above to reproduce the behavior of `head(surveys)`, keeping just the first through 6th rows of the surveys dataset.
 
-**Answers:**
-
-```r
-# 1.
-surveys_200 <- surveys[200, ]
-
-# 2.
-nrow(surveys)
-surveys_last1 <- surveys[34786, ]
-tail(surveys)
-
-# (Saving `n_rows` to improve readability)
-n_rows <- nrow(surveys)
-surveys_last2 <- surveys[n_rows, ]
-
-## 3.
-surveys_middle <- surveys[n_rows / 2, ]
-
-## 4.
-head(surveys)
-surveys_head <- surveys[-(7:n_rows), ]
-```
 
 #### 6. Introducing factors
 
@@ -322,14 +295,6 @@ head(sex)
 - Rename “F” and “M” to “female” and “male” respectively.
 - Now that we have renamed the factor level to “undetermined”, can you recreate the barplot such that “undetermined” is last (after “male”)?
 
-**Answer:**
-
-```r
-levels(sex)[2:3] <- c("female", "male")
-
-sex <- factor(sex, levels = c("female", "male", "undetermined"))
-plot(sex)
-```
 
 #### 9. Using `stringsAsFactors=FALSE`
 
@@ -361,9 +326,6 @@ animal_data <- data.frame(
           weight = c(45, 8 1.1, 0.8)
           )
 
-# missing quotations around the names of the animals
-# missing entry in the feel column (one of the furry animals)
-# missing one comma in the weight column
 ```
 
 2. Can you predict the class for each of the columns in the following example? Check your guesses using `str(country_climate)`:
@@ -380,9 +342,6 @@ country_climate <- data.frame(
        has_kangaroo = c(FALSE, FALSE, FALSE, 1)
        )
 
-# country, climate, temperature, and northern_hemisphere are factors; has_kangaroo is numeric
-# using stringsAsFactors = FALSE would have made character vectors instead of factors
-# removing quotes in temperature and northern_hemisphere and replacing 1 by TRUE in the has_kangaroo column
 ```
 
 The automatic conversion of data type is sometimes a blessing, sometimes an annoyance. Be aware that it exists, learn the rules, and double check that data you import in R are of the correct type within your data frame. If not, use it to your advantage to detect mistakes that might have been introduced during data entry (for instance, a letter in a column that should only contain numbers).
