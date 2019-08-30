@@ -24,10 +24,12 @@ Evening: Statistics (continued), feedback
 
 #### Coffee breaks
 
-10:30 - 10:50
+10:40 - 11:00
 
-16:30 - 16:50
+14:40 - 15:00
 
 #### Lunch
 
-12:15 - 13:15
+12:00 - 13:00
+
+
