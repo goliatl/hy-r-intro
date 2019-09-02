@@ -578,7 +578,7 @@ round(mtcarsdata_chisq$expected, 2) # rounding to two decimals
 #  Vshaped        2.81       6.75        8.44
 ```
 
-The warning is probably because in two out six cases, the expected values are quite low. R is telling us that the test output might be biased due to a lack of data. Out of curiosity, we could still have a look at it:
+The warning is because there are some cells in the contingency table that have an expected value below five. R is telling us that the test output might be biased due to a lack of data. Out of curiosity, we could still have a look at it:
 
 ```r
 mtcarsdata_chisq
